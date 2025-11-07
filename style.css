@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #f0f0f0;
+    --accent: #ffffff;
+    --highlight: #2c2c2c;
+    --primary: #444;
+    --secondary: #888;
+    --button-bg: #333;
+    --button-hover: #555;
+    --danger: #c0392b;
+    --danger-hover: #e74c3c;
+    --success: #27ae60;
+    --success-hover: #2ecc71;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+h1 {
+    font-size: 28px;
+    color: var(--accent);
+    text-shadow: 0 0 5px #fff1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.panel {
+    width: 300px;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform var(--transition-speed);
+}
+
+.panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+input[type="number"],select {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+    background-color: var(--highlight);
+    color: var(--text-main);
+    margin-left: 10px;
+}
+
+button {
+    background-color: var(--success);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--success-hover);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .panel {
+        width: 100%;
+    }
+}
+
+
+
+#vehicleSearch {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--secondary);
+    background-color: var(--highlight);
+    color: var(--text-main);
+    width: 100%;
+    margin-top: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid var(--secondary);
+    text-align: left;
+}
+
+th {
+    padding: 8px;
+    border-bottom: 1px solid var(--secondary);
+    background-color: var(--highlight);
+    color: var(--accent);
+    text-align: left;
+}
