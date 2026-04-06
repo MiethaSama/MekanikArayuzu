@@ -1,16 +1,13 @@
 <html>
-<html lang="tr">
-
 <head>
   <meta charset="UTF-8">
-  <title>Mekanik Panel v2</title>
+  <title>Mekanik Panel</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>Rina Roleplay Mekanik Arayüzü</h1>
   <div class="container">
-    <!-- Yağ Hesaplama Paneli -->
     <div class="panel">
       <h2>Yağ Hesaplama</h2>
       <label>Mevcut Seviye (0–100):
@@ -23,8 +20,7 @@
       <p><strong>Gerekli Yağ:</strong> <span id="oilResult">0</span> litre</p>
       <p><strong>Gerekli Yüzde:</strong> <span id="oilPercent">0</span>%</p>
     </div>
-
-    <!-- Stok Durumu Paneli -->
+    
     <div class="panel">
       <h2>Stok Durumu</h2>
       <label>%100 Yağ Adedi: <input type="number" id="stock100" min="0" value="1"></label>
@@ -33,8 +29,7 @@
       <label>%15 Yağ Adedi: <input type="number" id="stock15" min="0" value="4"></label>
       <label>%5 Yağ Adedi: <input type="number" id="stock5" min="0" value="5"></label>
     </div>
-
-    <!-- Kombinasyon Paneli -->
+    
     <div class="panel">
       <h2>Yağ Ürünleri ile Doldurma</h2>
       <label>Gerekli Yağ (%):
@@ -44,15 +39,13 @@
       <p><strong>Önerilen Kombinasyon:</strong> <span id="comboResult"></span></p>
       <p><strong>Eksik Kalan:</strong> <span id="comboLeftover"></span>%</p>
     </div>
-
-    <!-- Binek Maliyet Paneli -->
+    
     <div class="panel">
       <h2>Binek Araç Maliyeti</h2>
       <button onclick="calculateCost('binek')">Maliyeti Hesapla</button>
       <p><strong>Toplam Maliyet:</strong> <span id="costBinek">0</span> ₺</p>
     </div>
-
-    <!-- Meslek Maliyet Paneli -->
+    
     <div class="panel">
       <h2>Meslek Araç Maliyeti</h2>
       <button onclick="calculateCost('meslek')">Maliyeti Hesapla</button>
