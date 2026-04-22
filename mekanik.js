@@ -61,7 +61,7 @@ const fiyatlar = {
     25: 30000,
     50: 60000,
     100: 120000,
-    tamir: 2500,
+    tamir: 3000,
     temizlik: 2500
   },
 
